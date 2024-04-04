@@ -29,6 +29,56 @@ Example 4:
 ***********************************************************************/
 
 // Your code here 
+// let = countDownTimer = 3
+
+// while (n > 0) {
+//   console.log(i)
+//   return function () { 
+//     console.log(function() {
+//       i--;
+
+//     });
+//   }
+// }
+// }
+
+const countDownTimer = (n) => {
+  if (n === 0) {
+    return "Happy New Year!";
+  }
+
+  // Track count
+  let count = n;
+  // console.log("count", count)
+
+  return function () {
+    if (count > 0) {
+      count--;
+      // console.log(countDownTimer(count))
+      return countDownTimer(count);
+    }
+
+    return "Happy New Year!";
+  };
+}
+
+
+    
+  
+  
+
+
+
+// Need to call the function rather than passing in the function as an argument
+// remove the value in the call
+// console.log(countDownTimer());
+
+
+
+
+
+console.log(countDownTimer(3)); // prints "Happy New Year!"
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
