@@ -8,6 +8,17 @@ Do not use the built in Array.map - use Array.forEach for iteration.
 
 
 Examples:
+
+***********************************************************************/
+const arrowMyMap = (array, cb) => {
+  let arr = [];
+
+  for (let el of array) {
+    arr.push(cb(el))
+  }
+  return arr;
+}
+
 let result1 = arrowMyMap([100, 25, 81, 64], Math.sqrt);
 console.log(result1);   // [ 10, 5, 9, 8 ]
 
@@ -15,10 +26,6 @@ const yell = el => el.toUpperCase() + '!'
 
 let result2 = arrowMyMap(['run', 'Forrest'], yell);
 console.log(result2);   // [ 'RUN!', 'FORREST!' ]
-
-***********************************************************************/
-
-console.log(myMap) 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
