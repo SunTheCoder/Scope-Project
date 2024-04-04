@@ -18,7 +18,7 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 ***********************************************************************/
 
-// Your code here 
+console.log(myMap) 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
