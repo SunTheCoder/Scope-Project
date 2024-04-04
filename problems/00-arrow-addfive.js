@@ -15,7 +15,7 @@ let result3 = addFive(37); // returns 42
 
 ***********************************************************************/
 
-// Your code here 
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
