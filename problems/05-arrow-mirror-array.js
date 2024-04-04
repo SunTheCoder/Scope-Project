@@ -9,8 +9,12 @@ Examples:
 arrowMirrorArray([1,2,3]); // => [ 1, 2, 3, 3, 2, 1 ]
 arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 ***********************************************************************/
+// OPTION 1
+const arrowMirrorArray = (array) => [...array, ...array.reverse()]
 
-// Your code here 
+// // OPTION 2
+// const arrowMirrorArray = (array) => array.slice().concat(array.reverse())
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
