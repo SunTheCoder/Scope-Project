@@ -12,7 +12,7 @@ Examples:
 
 const arrowGetFullName = (person) => person.firstName + ' ' + person.lastName
 
-console.log(test)
+
 
 let p1 = {firstName: 'John', lastName: 'Doe'};
 console.log(arrowGetFullName(p1)); // => 'John Doe'
